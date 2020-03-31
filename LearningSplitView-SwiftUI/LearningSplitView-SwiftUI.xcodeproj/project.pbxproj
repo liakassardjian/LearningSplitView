@@ -13,6 +13,7 @@
 		E42D8B5A2433D13200CD6FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42D8B592433D13200CD6FD9 /* Assets.xcassets */; };
 		E42D8B5D2433D13200CD6FD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42D8B5C2433D13200CD6FD9 /* Preview Assets.xcassets */; };
 		E42D8B602433D13200CD6FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42D8B5E2433D13200CD6FD9 /* LaunchScreen.storyboard */; };
+		E42D8B682433DB9600CD6FD9 /* MeMoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42D8B672433DB9600CD6FD9 /* MeMoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E42D8B5C2433D13200CD6FD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E42D8B5F2433D13200CD6FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E42D8B612433D13200CD6FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42D8B672433DB9600CD6FD9 /* MeMoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E42D8B532433D13100CD6FD9 /* AppDelegate.swift */,
 				E42D8B552433D13100CD6FD9 /* SceneDelegate.swift */,
 				E42D8B572433D13100CD6FD9 /* ContentView.swift */,
+				E42D8B672433DB9600CD6FD9 /* MeMoji.swift */,
 				E42D8B592433D13200CD6FD9 /* Assets.xcassets */,
 				E42D8B5E2433D13200CD6FD9 /* LaunchScreen.storyboard */,
 				E42D8B612433D13200CD6FD9 /* Info.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42D8B682433DB9600CD6FD9 /* MeMoji.swift in Sources */,
 				E42D8B542433D13100CD6FD9 /* AppDelegate.swift in Sources */,
 				E42D8B562433D13100CD6FD9 /* SceneDelegate.swift in Sources */,
 				E42D8B582433D13100CD6FD9 /* ContentView.swift in Sources */,
