@@ -29,8 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         detailViewController.memoji = firstMemoji
         masterViewController.delegate = detailViewController
         
-        detailViewController.navigationItem.leftItemsSupplementBackButton = true
-        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+        splitViewController.preferredDisplayMode = .allVisible
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
