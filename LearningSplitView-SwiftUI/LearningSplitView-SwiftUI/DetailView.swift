@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DetailView.swift
 //  LearningSplitView-SwiftUI
 //
 //  Created by Lia Kassardjian on 31/03/20.
@@ -8,19 +8,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
+    var memoji: MeMoji
+    
     var body: some View {
-        DetailView(memoji: memoji[0])
-//        NavigationView {
-//            ListView()
-//        }
+        memoji.image
+            .scaleEffect(0.5)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DetailView(memoji: memoji[0])
     }
 }
-
-
