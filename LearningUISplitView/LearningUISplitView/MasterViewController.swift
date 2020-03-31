@@ -9,34 +9,34 @@
 import UIKit
 
 protocol MemojiSelectionDelegate: class {
-  func memojiSelected(_ newMemoji: MeMoji)
+    func memojiSelected(_ newMemoji: MeMoji)
 }
 
 class MasterViewController: UITableViewController {
     
-    let memoji = [MeMoji(name: "Crying", imageName: "crying"),
-                  MeMoji(name: "Developer", imageName: "developer"),
-                  MeMoji(name: "Disappointed", imageName: "disappointed"),
-                  MeMoji(name: "Happy", imageName: "happy"),
+    let memoji = [MeMoji(name: "Happy", imageName: "happy"),
+                  MeMoji(name: "Crying", imageName: "crying"),
                   MeMoji(name: "Mind blowing", imageName: "mindBlowing"),
+                  MeMoji(name: "Disappointed", imageName: "disappointed"),
+                  MeMoji(name: "Silly", imageName: "silly"),
+                  MeMoji(name: "Developer", imageName: "developer"),
+                  MeMoji(name: "Sleepy", imageName: "sleepy"),
                   MeMoji(name: "Party mood", imageName: "partyMood"),
                   MeMoji(name: "Shocked", imageName: "shocked"),
-                  MeMoji(name: "Silly", imageName: "silly"),
-                  MeMoji(name: "Sleepy", imageName: "sleepy"),
                   MeMoji(name: "Star", imageName: "star")]
     
     weak var delegate: MemojiSelectionDelegate?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memoji.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = memoji[indexPath.row].name
@@ -48,11 +48,11 @@ class MasterViewController: UITableViewController {
         delegate?.memojiSelected(selectedMemoji)
         
         if
-          let detailViewController = delegate as? DetailViewController,
-          let detailNavigationController = detailViewController.navigationController {
+            let detailViewController = delegate as? DetailViewController,
+            let detailNavigationController = detailViewController.navigationController {
             splitViewController?
-              .showDetailViewController(detailNavigationController, sender: nil)
+                .showDetailViewController(detailNavigationController, sender: nil)
         }
     }
-
+    
 }

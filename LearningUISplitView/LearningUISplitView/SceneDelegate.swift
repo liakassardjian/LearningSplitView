@@ -20,9 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             as? UINavigationController,
           let masterViewController = leftNavController.viewControllers.first
             as? MasterViewController,
-          let detailViewController = splitViewController.viewControllers.last
-            as? DetailViewController
-          else { fatalError() }
+          let detailViewController =
+          (splitViewController.viewControllers.last as? UINavigationController)?
+            .topViewController as? DetailViewController
+            else { fatalError() }
 
         let firstMemoji = masterViewController.memoji.first
         detailViewController.memoji = firstMemoji

@@ -11,7 +11,6 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
     
     var memoji: MeMoji? {
         didSet {
@@ -26,7 +25,7 @@ class DetailViewController: UIViewController {
     private func refreshUI() {
         loadViewIfNeeded()
         imageView.image = memoji?.image
-        nameLabel.text = memoji?.name
+        self.title = memoji?.name
     }
 }
 
