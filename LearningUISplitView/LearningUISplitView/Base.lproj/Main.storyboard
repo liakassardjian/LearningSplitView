@@ -7,14 +7,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="BqP-M6-4ue">
             <objects>
-                <viewController id="cLe-Ua-cwQ" sceneMemberID="viewController">
+                <viewController id="cLe-Ua-cwQ" customClass="DetailViewController" customModule="LearningUISplitView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KKR-P9-fbg">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-91-r0J">
+                                <rect key="frame" x="335" y="501.5" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gr1-91-r0J" firstAttribute="centerY" secondItem="KKR-P9-fbg" secondAttribute="centerY" id="Qh2-6u-mF2"/>
+                            <constraint firstItem="gr1-91-r0J" firstAttribute="centerX" secondItem="KKR-P9-fbg" secondAttribute="centerX" id="XVU-co-EPc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8Iv-nj-5iH"/>
                     </view>
                 </viewController>

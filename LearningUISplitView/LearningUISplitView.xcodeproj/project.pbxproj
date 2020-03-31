@@ -13,6 +13,8 @@
 		E4C723C62433B17B00C0160E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C723C52433B17B00C0160E /* Assets.xcassets */; };
 		E4C723C92433B17B00C0160E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C723C72433B17B00C0160E /* LaunchScreen.storyboard */; };
 		E4C723D12433B44E00C0160E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C723D02433B44E00C0160E /* MasterViewController.swift */; };
+		E4C723D32433B59100C0160E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C723D22433B59100C0160E /* DetailViewController.swift */; };
+		E4C723D52433B7AB00C0160E /* MeMoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C723D42433B7AB00C0160E /* MeMoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E4C723C82433B17B00C0160E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4C723CA2433B17B00C0160E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4C723D02433B44E00C0160E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		E4C723D22433B59100C0160E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E4C723D42433B7AB00C0160E /* MeMoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E4C723C72433B17B00C0160E /* LaunchScreen.storyboard */,
 				E4C723CA2433B17B00C0160E /* Info.plist */,
 				E4C723D02433B44E00C0160E /* MasterViewController.swift */,
+				E4C723D22433B59100C0160E /* DetailViewController.swift */,
+				E4C723D42433B7AB00C0160E /* MeMoji.swift */,
 			);
 			path = LearningUISplitView;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				E4C723BD2433B17900C0160E /* AppDelegate.swift in Sources */,
 				E4C723BF2433B17900C0160E /* SceneDelegate.swift in Sources */,
 				E4C723D12433B44E00C0160E /* MasterViewController.swift in Sources */,
+				E4C723D52433B7AB00C0160E /* MeMoji.swift in Sources */,
+				E4C723D32433B59100C0160E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
