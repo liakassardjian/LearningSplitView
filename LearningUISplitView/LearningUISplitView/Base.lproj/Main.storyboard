@@ -15,8 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-91-r0J">
-                                <rect key="frame" x="335" y="501.5" width="98" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1eD-Gv-aPD">
+                                <rect key="frame" x="192" y="320" width="384" height="384"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30b-FY-7uH">
+                                <rect key="frame" x="363" y="712" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -24,11 +27,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gr1-91-r0J" firstAttribute="centerY" secondItem="KKR-P9-fbg" secondAttribute="centerY" id="Qh2-6u-mF2"/>
-                            <constraint firstItem="gr1-91-r0J" firstAttribute="centerX" secondItem="KKR-P9-fbg" secondAttribute="centerX" id="XVU-co-EPc"/>
+                            <constraint firstItem="1eD-Gv-aPD" firstAttribute="centerX" secondItem="KKR-P9-fbg" secondAttribute="centerX" id="0ne-ia-Lhi"/>
+                            <constraint firstItem="30b-FY-7uH" firstAttribute="centerX" secondItem="KKR-P9-fbg" secondAttribute="centerX" id="CWx-tm-8Ws"/>
+                            <constraint firstItem="1eD-Gv-aPD" firstAttribute="width" secondItem="KKR-P9-fbg" secondAttribute="width" multiplier="0.5" id="DLr-px-yQq"/>
+                            <constraint firstItem="1eD-Gv-aPD" firstAttribute="centerY" secondItem="KKR-P9-fbg" secondAttribute="centerY" id="GcE-nX-2vw"/>
+                            <constraint firstItem="30b-FY-7uH" firstAttribute="top" secondItem="1eD-Gv-aPD" secondAttribute="bottom" constant="8" id="gUP-Z7-536"/>
+                            <constraint firstItem="1eD-Gv-aPD" firstAttribute="height" secondItem="KKR-P9-fbg" secondAttribute="width" multiplier="0.5" id="jdC-a9-7au"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Iv-nj-5iH"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="1eD-Gv-aPD" id="vF4-pX-4na"/>
+                        <outlet property="nameLabel" destination="30b-FY-7uH" id="bxQ-rT-eiD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIn-67-B8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
