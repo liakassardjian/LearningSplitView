@@ -9,6 +9,17 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
+    
+    let memoji = [MeMoji(name: "Crying", imageName: "crying"),
+                  MeMoji(name: "Developer", imageName: "developer"),
+                  MeMoji(name: "Disappointed", imageName: "disappointed"),
+                  MeMoji(name: "Happy", imageName: "happy"),
+                  MeMoji(name: "Mind blowing", imageName: "mindBlowing"),
+                  MeMoji(name: "Party mood", imageName: "partyMood"),
+                  MeMoji(name: "Shocked", imageName: "shocked"),
+                  MeMoji(name: "Silly", imageName: "silly"),
+                  MeMoji(name: "Sleepy", imageName: "sleepy"),
+                  MeMoji(name: "Star", imageName: "star")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +38,12 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return memoji.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = memoji[indexPath.row].name
         return cell
     }
 
