@@ -13,13 +13,25 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    var memoji: MeMoji?
+    var memoji: MeMoji? {
+        didSet {
+            refreshUI()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    private func refreshUI() {
+        loadViewIfNeeded()
         imageView.image = memoji?.image
         nameLabel.text = memoji?.name
     }
+}
 
+extension DetailViewController: MemojiSelectionDelegate {
+    func memojiSelected(_ newMemoji: MeMoji) {
+        memoji = newMemoji
+    }
 }
