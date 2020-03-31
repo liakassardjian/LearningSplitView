@@ -10,10 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        DetailView(memoji: memoji[0])
-//        NavigationView {
-//            ListView()
-//        }
+        NavigationView {
+            ListView()
+        }
     }
 }
 

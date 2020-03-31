@@ -12,8 +12,9 @@ struct ListView: View {
     var body: some View {
         List {
             ForEach(memoji, id: \.name) { item in
-//                NavigationLink()
-                Text(item.name)
+                NavigationLink(destination: DetailView(memoji: item)) {
+                    Text(item.name)
+                }
             }
         }.navigationBarTitle("MeMoji")
     }

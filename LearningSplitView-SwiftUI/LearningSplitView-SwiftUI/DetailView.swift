@@ -14,6 +14,9 @@ struct DetailView: View {
     var body: some View {
         memoji.image
             .scaleEffect(0.5)
+            .navigationBarTitle(
+                Text(memoji.name),
+                displayMode: .inline)
     }
 }
 
