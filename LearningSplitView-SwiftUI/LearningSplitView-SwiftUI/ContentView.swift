@@ -12,13 +12,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ListView()
+            DetailView(memoji: memoji[0])
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ForEach(["", "iPad Pro (12.9-inch)"], id: \.self) { deviceName in
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+//        ContentView()
     }
 }
 
