@@ -46,6 +46,13 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedMemoji = memoji[indexPath.row]
         delegate?.memojiSelected(selectedMemoji)
+        
+        if
+          let detailViewController = delegate as? DetailViewController,
+          let detailNavigationController = detailViewController.navigationController {
+            splitViewController?
+              .showDetailViewController(detailNavigationController, sender: nil)
+        }
     }
 
 }
